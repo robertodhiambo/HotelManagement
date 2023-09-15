@@ -82,7 +82,7 @@ namespace HotelManagement.Migrations
                         column: x => x.CustomerId,
                         principalTable: "Customers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.NoAction );
                 });
 
             migrationBuilder.CreateTable(
@@ -200,7 +200,7 @@ namespace HotelManagement.Migrations
                 column: "CustomerId",
                 principalTable: "Customers",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.NoAction);
+                onDelete: ReferentialAction.NoAction );
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Rooms_RoomTypes_RoomTypeId",
@@ -208,7 +208,7 @@ namespace HotelManagement.Migrations
                 column: "RoomTypeId",
                 principalTable: "RoomTypes",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.NoAction );
+                onDelete: ReferentialAction.NoAction);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_RoomTypePricings_RoomTypes_RoomTypeId",
