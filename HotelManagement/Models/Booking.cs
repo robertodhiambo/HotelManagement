@@ -16,13 +16,9 @@ namespace HotelManagement.Models
         [DatabaseGenerated ( DatabaseGeneratedOption.Identity )]
         public int Id { get; set; }
 
-        public int CustomerId { get; set; }
-
-        public int RoomId { get; set; }
-
-        public int PaymentId { get; set; }
-
         public int NoOfGuests { get; set; }
+
+        public int CustomerId { get; set; }
 
         public DateTime DateBooked { get; set; }
 
@@ -44,13 +40,8 @@ namespace HotelManagement.Models
 
         public DateTime DateCreated { get; set; }
 
-        [ForeignKey("CustomerId")]
+        [ForeignKey ( "CustomerId" )]
         public virtual Customer Customer { get; set; }
 
-        [ForeignKey("RoomId")]
-        public virtual Room Room { get; set; }
-
-        [ForeignKey("PaymentId")]
-        public virtual Payment Payment { get; set; }
     }
 }

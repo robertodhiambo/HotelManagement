@@ -7,8 +7,6 @@ namespace HotelManagement.Models
         [DatabaseGenerated ( DatabaseGeneratedOption.Identity )]
         public int Id { get; set; }
 
-        public int PaymentId { get; set; }
-
         public int BookingId { get; set; }
 
         public string FirstName { get; set; }
@@ -27,10 +25,7 @@ namespace HotelManagement.Models
 
         public DateTime DateRegistered { get; set; }
 
-        [ForeignKey("PaymentId")]
-        public virtual Payment Payment { get; set; }
-
         [ForeignKey("BookingId")]
-        public virtual Booking Booking { get; set; }
+        public virtual  Booking Booking { get; set; }
     }
 }

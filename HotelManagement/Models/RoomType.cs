@@ -23,9 +23,9 @@ namespace HotelManagement.Models
         public int RoomTypePricingId { get; set; }
 
         [ForeignKey( "RoomId" )]
-        public virtual Room Room { get; set; }
+        public virtual  Room Room { get; set; }
 
         [ForeignKey( "RoomTypePricingId" )]
-        public virtual RoomTypePricing RoomTypePricing { get; set; }
+        public virtual  RoomTypePricing RoomTypePricing { get; set; }
     }
 }

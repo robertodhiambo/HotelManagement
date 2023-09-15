@@ -13,8 +13,6 @@ namespace HotelManagement.Models
         [DatabaseGenerated ( DatabaseGeneratedOption.Identity )]
         public int Id { get; set; }
 
-        public int BookingId { get; set; }
-
         public int CustomerId { get; set; }
 
         public string PaymentMethod { get; set; }
@@ -28,7 +26,5 @@ namespace HotelManagement.Models
         [ForeignKey("CustomerId")]
         public virtual Customer Customer { get; set; }
 
-        [ForeignKey("BookingId")]
-        public virtual Booking Booking { get; set; }
     }
 }

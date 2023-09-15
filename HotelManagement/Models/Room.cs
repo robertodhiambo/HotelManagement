@@ -30,6 +30,6 @@ namespace HotelManagement.Models
         public virtual RoomType RoomType { get; set; }
 
         [ForeignKey( "BookingId" )]
-        public virtual Booking Booking { get; set; }
+        public virtual  Booking Booking { get; set; }
     }
 }

@@ -24,6 +24,6 @@ namespace HotelManagement.Models
         public DateTime DateCreated { get; set; }
 
         [ForeignKey( "RoomTypeId" )]
-        public virtual RoomType RoomType { get; set; }
+        public virtual  RoomType RoomType { get; set; }
     }
 }
