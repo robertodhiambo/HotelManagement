@@ -18,14 +18,5 @@ namespace HotelManagement.Models
 
         public string Description { get; set; }
 
-        public int RoomId { get; set; }
-
-        public int RoomTypePricingId { get; set; }
-
-        [ForeignKey( "RoomId" )]
-        public virtual  Room Room { get; set; }
-
-        [ForeignKey( "RoomTypePricingId" )]
-        public virtual  RoomTypePricing RoomTypePricing { get; set; }
     }
 }

@@ -16,20 +16,11 @@ namespace HotelManagement.Models
 
         public string RoomNumber { get; set; }
 
-        public int RoomTypeId { get; set; }
-
-        public int BookingId { get; set; }
-
         public int FloorNumber { get; set; }
 
         public RoomStatus Status { get; set; }
 
         public DateTime DateCreated { get; set; }
 
-        [ForeignKey( "RoomTypeId" )]
-        public virtual RoomType RoomType { get; set; }
-
-        [ForeignKey( "BookingId" )]
-        public virtual  Booking Booking { get; set; }
     }
 }

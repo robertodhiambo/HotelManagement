@@ -18,8 +18,6 @@ namespace HotelManagement.Models
 
         public int NoOfGuests { get; set; }
 
-        public int CustomerId { get; set; }
-
         public DateTime DateBooked { get; set; }
 
         public decimal TotalCost { get; set; }
@@ -39,9 +37,6 @@ namespace HotelManagement.Models
         public DateTime? ActualCheckOutDate { get; set; }
 
         public DateTime DateCreated { get; set; }
-
-        [ForeignKey ( "CustomerId" )]
-        public virtual Customer Customer { get; set; }
 
     }
 }

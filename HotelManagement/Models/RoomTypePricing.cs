@@ -13,8 +13,6 @@ namespace HotelManagement.Models
         [DatabaseGenerated ( DatabaseGeneratedOption.Identity )]
         public int Id { get; set; }
 
-        public int RoomTypeId { get; set; }
-
         public string Currency { get; set; }
 
         public decimal Price { get; set; }
@@ -23,7 +21,5 @@ namespace HotelManagement.Models
 
         public DateTime DateCreated { get; set; }
 
-        [ForeignKey( "RoomTypeId" )]
-        public virtual  RoomType RoomType { get; set; }
     }
 }

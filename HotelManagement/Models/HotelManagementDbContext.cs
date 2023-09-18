@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using HotelManagement.ViewModels;
 
 namespace HotelManagement.Models
 {
@@ -20,6 +21,7 @@ namespace HotelManagement.Models
         {
             base.OnModelCreating ( modelBuilder );
         }
+
     }
 
 }
